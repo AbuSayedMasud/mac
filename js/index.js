@@ -65,7 +65,7 @@ document.getElementById('promo-code').addEventListener('click', function () {
     if (promoCode.value === 'stevekaku') {
         const discount = (totalCost * 20) / 100;
         const afterUsingPromoCode = totalCost - discount;
-        bestPrice.innerText = afterUsingPromoCode;
+        bestPrice.innerText = afterUsingPromoCode.toFixed(2);
         footerTotalPrice.innerText = afterUsingPromoCode;
         document.getElementById('input-value').value = '';
     }
